@@ -5,7 +5,7 @@ In this [data analysis project](https://github.com/aliciahlavac/CryptoClustering
 
 Next, we employ the elbow method to determine the optimal number of clusters (k) for our K-Means clustering. We create a list of k values ranging from 1 to 11, compute the inertia (within-cluster sum of squares) for each value of k, and plot an elbow curve to visually identify the best k value.
 
-With the best k value in hand, we proceed to perform K-Means clustering using the original scaled data. We initialize the K-Means model and fit it with the data, predicting clusters to group cryptocurrencies. We then visualize the results by creating a scatter plot using hvPlot, where we set the x-axis as "PC1" and the y-axis as "PC2" and color the graph points with the cluster labels obtained from K-Means. We add the "coin_id" column in the hover_cols parameter to identify each cryptocurrency.
+With the best k value in hand, we proceed to perform K-Means clustering using the original scaled data. We initialize the K-Means model and fit it with the data, predicting clusters to group cryptocurrencies. We then visualize the results by creating a scatter plot using hvPlot, where we set the x-axis as "PCA1" and the y-axis as "PCA2" and color the graph points with the cluster labels obtained from K-Means. We add the "coin_id" column in the hover_cols parameter to identify each cryptocurrency.
 
 Furthermore, we explore Principal Component Analysis (PCA) on the original scaled data to reduce features to three principal components. We retrieve the explained variance to assess how much information can be attributed to each principal component.
 
