@@ -1,5 +1,6 @@
 # CryptoClustering
 Module 19 Challenge
+
 In this data analysis project, we begin by preparing and normalizing cryptocurrency data from a CSV file using the StandardScaler module from scikit-learn. We then create a DataFrame with the scaled data, setting the "coin_id" index from the original DataFrame as the index for the new DataFrame.
 
 Next, we employ the elbow method to determine the optimal number of clusters (k) for our K-Means clustering. We create a list of k values ranging from 1 to 11, compute the inertia (within-cluster sum of squares) for each value of k, and plot an elbow curve to visually identify the best k value.
